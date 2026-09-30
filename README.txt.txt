@@ -1,0 +1,1 @@
+This images folder will contain images which will be used to support the content of the AgriTrack ZW farm management portal. These will include images of maize, wheat and sorghum crops for the crop databases. It will also contain other relevant agricultural images that will be added to the website. 
