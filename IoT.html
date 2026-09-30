@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriTrack ZW - IoT Sensors</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AgriTrack ZW</h1>
+        <p>Smart Field Sensor Monitoring</p>
+
+   <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="iot.html">IoT Sensors</a>
+    <a href="register.html">New Registration</a>
+</nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Field Sensor Readings</h2>
+
+            <p id="iot-message">
+                Waiting for sensor readings...
+            </p>
+
+            <div id="sensor-container">
+
+                <!-- Soil Moisture Sensor -->
+                <article class="sensor-card" id="soil-moisture-card">
+                    <h3>Soil Moisture</h3>
+                    <p>
+                        Current Reading:
+                        <span id="soil-moisture-reading">--</span>
+                        %
+                    </p>
+                    <p>
+                        Status:
+                        <span id="soil-moisture-status">Waiting...</span>
+                    </p>
+                </article>
+
+                    <!-- Temperature Sensor -->
+                <article class="sensor-card" id="temperature-card">
+                    <h3>Temperature</h3>
+                    <p>
+                        Current Reading:
+                        <span id="temperature-reading">--</span>
+                        °C
+                    </p>
+                    <p>
+                        Status:
+                        <span id="temperature-status">Waiting...</span>
+                    </p>
+                </article>
+               
+
+                <!-- Light Intensity Sensor -->
+                <article class="sensor-card" id="light-card">
+                    <h3>Light Intensity</h3>
+                    <p>
+                        Current Reading:
+                        <span id="light-reading">--</span>
+                        lux
+                    </p>
+                    <p>
+                        Status:
+                        <span id="light-status">Waiting...</span>
+                    </p>
+                </article>
+
+                 <!-- Humidity Sensor -->
+                <article class="sensor-card" id="humidity-card">
+                    <h3>Humidity</h3>
+                    <p>
+                        Current Reading:
+                        <span id="humidity-reading">--</span>
+                        %
+                    </p>
+                    <p>
+                        Status:
+                        <span id="humidity-status">Waiting...</span>
+                    </p>
+                </article>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Sensor Alert Log</h2>
+
+            <div id="iot-alert-log">
+                <p>No sensor alerts yet.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AgriTrack ZW</p>
+    </footer>
+<script type="module" src="js/iotDisplay.js"></script>
+<script type="module" src="js/iot.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+  I chose to use <header> semantic instead of <div> because it identifies the introductory content of the page area of the website which includes the website title, a tagline and a navigation menu
+    Another semantic element I used is <main> which identifies the main content of the page area of the website which includes a welcome message and the primary content of my website for example the introduction of my Agritrack zw website.
+        Instead of <div>, i used <section> element because it divides the main content of my webpage into separate meaningful topics which the <div> does not do.
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agritrack ZW</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+    <h1>Agritrack ZW</h1>
+    <p>Farm Management Portal for Zimbabwean Agricultural Community</p>
+
+    <nav>
+   <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="iot.html">IoT Sensors</a>
+    <a href="register.html">New Registration</a>
+ </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Welcome to Agritrack ZW</h2>
+        <p>Agritrack ZW helps farmers and agricultural extension officers to access crop information, receiving weather updates and different alerts.</p>
+</section>
+
+<section>
+    <h2>Portal statistics</h2>
+    <ul>
+        <li>3 crop profiles available</li>
+         <li>10 Zimbabwean provinces supported</li>
+          <li>2 agricultural alerts displayed</li>
+           <li>1 Weather section for live data</li>
+</ul>
+</section>
+<section id="crop-database">
+    <h2> Crop Database</h2>
+    <p>This crop database contains information about different crops produced in Zimbabwe.</p>
+
+    <article>
+    <h3>Maize</h3>
+
+    <img src="images/maize.jpg" alt="Maize plants growing in a Zimbabwean field">
+
+    <p>Maize is one of the major cereal crops grown in Zimbabwe. Rainfed maize is mainly planted at the beginning of the summer rainy season, while production practices vary according to rainfall and farming conditions.</p>
+
+    <table>
+        <caption>Maize growing information</caption>
+        <tr>
+            <th>Growing season</th>
+            <th>Planting period</th>
+            <th>Harvest period</th>
+            <th> water requirement</th>
+        </tr>
+        <tr>
+            <td>Summer rainy season</td>
+            <td>November to December</td>
+            <td>April to June</td>
+            <td>500 to 800 millimetres</td>
+        </tr>
+    </table>
+</article>
+    <article>
+    <h3>Wheat</h3>
+
+    <img src="images/wheat.jpg" alt="Wheat crop growing in an agricultural field">
+
+    <p>Wheat is an important cereal crop in Zimbabwe and is mostly produced during the winter season under irrigation. Wheat is planted during the cooler months and harvested after the winter season.</p>
+
+    <table>
+        <caption>Wheat growing information</caption>
+        <tr>
+            <th>Growing season</th>
+            <th>Planting period</th>
+            <th>Harvest period</th>
+            <th>water requirement</th>
+        </tr>
+        <tr>
+            <td>Winter season</td>
+            <td>April to May</td>
+            <td>October to November</td>
+            <td>450 to 650 millimetres</td>
+        </tr>
+    </table>
+</article>
+
+<article>
+    <h3>Sorghum</h3>
+
+    <img src="images/sorghum.jpg" alt="Sorghum plants growing in a field">
+
+    <p>Sorghum is a drought-tolerant cereal crop grown in Zimbabwe, particularly in areas where rainfall is lower or less reliable. It is commonly grown during the summer rainy season.</p>
+
+    <table>
+        <caption>Sorghum growing information</caption>
+        <tr>
+            <th>Growing season</th>
+            <th>Planting period</th>
+            <th>Harvest period</th>
+            <th>water requirement</th>
+        </tr>
+        <tr>
+            <td>Summer rainy season</td>
+            <td>November to January</td>
+            <td>March to April</td>
+            <td>450 to 650 millimetres</td>
+        </tr>
+    </table>
+</article>
+</section>
+
+<section id="weather">
+    <h2>Weather Information</h2>
+
+    <div id="weather-message">
+        Loading current weather information.....
+    </div>
+
+    <div id="weather-container"></div>
+</section
+<section id="alerts">
+    <h2>Agricultural Alerts</h2>
+
+    <article>
+        <h3>Low Rainfall and Soil Moisture Alert</h3>
+        <p>Farmers in areas experiencing below-normal rainfall should monitor soil moisture and conserve available water.</p>
+        <p>Issue date: <time datetime="2026-09-09">9 September 2026</time></p>
+        <button type="button" class="dismiss-alert">Dismiss Alert</button>
+    </article>
+
+    <article>
+        <h3>Crop Pest Monitoring Alert</h3>
+        <p>Farmers are encouraged to regularly inspect crops for signs of insect pests such as stem borers in maize and other crop damage. Identifying pests early can help farmers take control measures before infestations become serious.</p>
+        <p>Issue date: <time datetime="2026-09-09">9 September 2026</time></p>
+        <button type="button" class="dismiss-alert">Dismiss Alert</button>
+    </article>
+</section>
+
+<aside>
+    <h2>Useful Agricultural Resources</h2>
+
+    <ul>
+        <li><a href="PASTE_MINISTRY_OF_AGRICULTURE_LINK_HERE">Ministry of Agriculture</a></li>
+        <li><a href="PASTE_FAO_LINK_HERE">Food and Agriculture Organization</a></li>
+    </ul>
+</aside>
+<section>
+    <h2>Get Started</h2>
+    <p>Kindly register your farm using Agritrack Zw.</p>
+    <a href="register.html"> Register your farm</a>
+    </section>
+
+    </main>
+<footer>
+    <p>2026 Agritrack Zw</p>
+</footer>
+<script src="js/register.js"></script>
+<script type="module" src="js/alerts.js"></script>
+ <script type="module" src="js/weather.js"></script>
+ 
+</body>
+</html>

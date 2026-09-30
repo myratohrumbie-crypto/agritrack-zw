@@ -1,0 +1,22 @@
+🌱 AgriTrack ZW updates
+
+Week 1   
+I started things off by laying down the core structure of the AgriTrack ZW website. Using HTML5 semantics, I set up the homepage and a farmer registration form. 
+To make the platform useful, I added sections for crop data, weather updates and agricultural alerts.
+Navigation links were also introduced, making it easy to move between the main pages.
+
+Week 2  
+With the skeleton in place, I turned the attention to design. 
+I used CSS styling to give the site a new look, improving layouts, colours, spacing and typography.
+I made sure the website fits well across different screen sizes so that farmers can access it on any device. 
+I added maize, sorghum and wheat images, giving the website a better view.
+
+Week 3 
+During this week, this is when the sited started taking shape. 
+I built a crop tracking dashboard powered by JavaScript allowing farmers to add, harvest and remove crops. 
+To keep the code neat and organized, I applied the Module Pattern and for communication between components, I used an Observer Pattern with an EventBus.  
+
+The dashboard follows a Model View Controller structure which ensures flexibility and simplicity. 
+On the farmer registration form, I introduced real-time validation, blur checks, inline error messages and a success message for valid submissions.
+Activated agricultural alerts, where farmers can now dismiss them with events triggered to track those actions.
+

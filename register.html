@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farm Registration - AgriTrack ZW</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AgriTrack ZW</h1>
+        <p>Farm Management Portal for Zimbabwean Agricultural Communities</p>
+
+    <nav>
+   <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="iot.html">IoT Sensors</a>
+    <a href="register.html">New Registration</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+            <h2>Farm Account Registration</h2>
+
+            <p>
+                Kindly complete the form below to create a farm account on AgriTrack ZW.
+                Only appropriate information will be accepted.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Registration Form</h2>
+
+            <form action="#" method="post" id="registration-form" novalidate>
+
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="full-name">Full Name:</label><br>
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full_name"
+                            minlength="3"
+                            maxlength="100"
+                            required
+                            autocomplete="name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            maxlength="100"
+                            required
+                            autocomplete="email">
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label><br>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+263771234567"
+                            pattern="[+][0-9]{12}"
+                            required
+                            autocomplete="tel">
+                    </p>
+
+                    <p>
+                        <label for="national-id">National ID Number:</label><br>
+                        <input
+                            type="text"
+                            id="national-id"
+                            name="national_id"
+                            minlength="7"
+                            maxlength="20"
+                            required>
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Farm Information</legend>
+
+                    <p>
+                        <label for="farm-size">Farm Size in Hectares:</label><br>
+                        <input
+                            type="number"
+                            id="farm-size"
+                            name="farm_size"
+                            min="0.1"
+                            max="100000"
+                            step="0.1"
+                            required>
+                    </p>
+
+
+                    <p>
+                        <label for="province">Province:</label><br>
+
+                        <select id="province" name="province" required>
+
+                            <option value="">-- Select Province --</option>
+
+                            <optgroup label="Metropolitan Provinces">
+                                <option value="Bulawayo">Bulawayo</option>
+                                <option value="Harare">Harare</option>
+                            </optgroup>
+
+                            <optgroup label="Other Provinces">
+                                <option value="Manicaland">Manicaland</option>
+                                <option value="Mashonaland Central">Mashonaland Central</option>
+                                <option value="Mashonaland East">Mashonaland East</option>
+                                <option value="Mashonaland West">Mashonaland West</option>
+                                <option value="Matabeleland North">Matabeleland North</option>
+                                <option value="Matabeleland South">Matabeleland South</option>
+                                <option value="Masvingo">Masvingo</option>
+                                <option value="Midlands">Midlands</option>
+                            </optgroup>
+
+                        </select>
+                    </p>
+
+
+                    <p>
+                        <label for="district">District:</label><br>
+
+                        <input
+                            type="text"
+                            id="district"
+                            name="district"
+                            list="district-list"
+                            maxlength="50"
+                            required>
+
+                        <datalist id="district-list">
+                            <option value="Nyanga">
+                            <option value="Goromonzi">
+                            <option value="Marondera">
+                            <option value="Mutare">
+                            <option value="Rusape">
+                            <option value="Hwange">
+                            <option value="Bindura">
+                            <option value="Chiredzi">
+                            <option value="Gweru">
+                            <option value="Kwekwe">
+                            <option value="Zvishavane">
+                            <option value="Chinhoyi">
+                            <option value="Kadoma">
+                            <option value="Gwanda">
+                            <option value="Masvingo">
+                    
+                        </datalist>
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Crops Grown</legend>
+
+                    <p>Select the crops currently grown on the farm:</p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="maize"
+                            name="crops"
+                            value="Maize">
+                        <label for="maize">Maize</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="wheat"
+                            name="crops"
+                            value="Wheat">
+                        <label for="wheat">Wheat</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="sorghum"
+                            name="crops"
+                            value="Sorghum">
+                        <label for="sorghum">Sorghum</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="beans"
+                            name="crops"
+                            value="Beans">
+                        <label for="beans">Beans</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="cotton"
+                            name="crops"
+                            value="Cotton">
+                        <label for="cotton">Cotton</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="tobacco"
+                            name="crops"
+                            value="Tobacco">
+                        <label for="tobacco">Tobacco</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="roundnuts"
+                            name="crops"
+                            value="Roundnuts">
+                        <label for="roundnuts">Roundnuts</label>
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Growing Season</legend>
+
+                    <p>Select the main growing season:</p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="summer-season"
+                            name="growing-season"
+                            value="Summer rainy season"
+                            required>
+                        <label for="summer-season">Summer rainy season</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="winter-season"
+                            name="growing-season"
+                            value="Winter season">
+                        <label for="winter-season">Winter season</label>
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Irrigation Information</legend>
+
+                    <p>
+                        <label for="irrigation-type">Irrigation Type:</label><br>
+
+                        <select
+                            id="irrigation-type"
+                            name="irrigation_type"
+                            required>
+
+                            <option value="">-- Choose an Irrigation Type --</option>
+                            <option value="Rainfed">Rainfed</option>
+                            <option value="Flood irrigation">flood irrigation</option>
+                            <option value="Sprinkler irrigation">Sprinkler irrigation</option>
+                            <option value="Centre pivot irrigation">Centre pivot irrigation</option>
+                            <option value="Drip irrigation">Drip irrigation</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Account Security</legend>
+
+                    <p>
+                        <label for="password">Password:</label><br>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            minlength="8"
+                            maxlength="32"
+                            required
+                            autocomplete="new-password">
+                    </p>
+
+                    <p>
+                        <label for="confirm-password">Confirm Password:</label><br>
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm_password"
+                            minlength="8"
+                            maxlength="32"
+                            required
+                            autocomplete="new-password">
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <p>
+                        <label for="notes">
+                            Farm Notes or Description:
+                        </label><br>
+
+                        <textarea
+                            id="notes"
+                            name="notes"
+                            rows="6"
+                            cols="50"
+                            maxlength="500"
+                            placeholder="Please type some additional information about your farm"></textarea>
+                    </p>
+
+                    <p>
+                        Maximum 500 characters.
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Terms and Conditions</legend>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            value="accepted"
+                            required>
+
+                        <label for="terms">
+                            I agree to the AgriTrack ZW terms and conditions.
+                        </label>
+                    </p>
+
+                </fieldset>
+
+
+                <p>
+                    <button type="submit">Create New Farm Account</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <aside>
+        <h2>Registration Information</h2>
+
+        <p>
+            Can you kindly provide accurate information!
+        </p>
+    </aside>
+
+
+    <footer>
+
+        <p>
+            Contact: AgriTrack ZW +263 77 123 4567
+        </p>
+
+        <p>
+            Email: support@agritrackzw.co.zw
+        </p>
+    </footer>
+    
+<script type="module" src="js/register.js"></script>
+</body>
+</html>
